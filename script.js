@@ -1,6 +1,6 @@
 // Hot Wheels Garage — demo storefront. Replace the sample products and WhatsApp number before publishing.
 const products = [
-  {id:1,name:"CUSTOM 72 CHEVY LUV",category:"Racing",tag:"BESTSELLER",price:399,oldPrice:499,desc:"A track-inspired machine built for your display.","72.jpg"},
+  {id:1,name:"CUSTOM 72 CHEVY LUV",category:"Racing",tag:"BESTSELLER",price:399,oldPrice:499,desc:"A track-inspired machine built for your display.",image:"72.jpg"},
   {id:2,name:"Midnight Supercar",category:"Supercars",tag:"HOT PICK",price:499,oldPrice:599,desc:"Sleek lines and supercar attitude.",image:"https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=700&q=80"},
   {id:3,name:"Classic Muscle 68",category:"Classic",tag:"CLASSIC",price:349,oldPrice:399,desc:"Old-school muscle with timeless style.",image:"https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=700&q=80"},
   {id:4,name:"Street Racer X",category:"Racing",tag:"NEW DROP",price:449,oldPrice:549,desc:"A bold street racer for your collection.",image:"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=700&q=80"},
