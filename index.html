@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hot Wheels Garage — discover collectible die-cast cars, racing legends, and special editions.">
+  <title>🔥 Hot Wheels Garage | Fuel Your Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">🏁 FREE SHIPPING ON ORDERS OVER ₹999 <span>•</span> BUILT FOR COLLECTORS</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Hot Wheels Garage home"><span class="brand-flame">🔥</span><span>HOT WHEELS <b>GARAGE</b></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Home</a><a href="#shop">Shop Cars</a><a href="#collections">Collections</a><a href="#about">Our Garage</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchFocus" aria-label="Focus search">⌕</button>
+      <button class="cart-btn" id="openCart" aria-label="Open shopping cart">🛒 <span>Cart</span><i id="cartCount">0</i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> THE COLLECTOR'S PIT STOP</p>
+        <h1>FUEL YOUR<br><em>COLLECTION.</em></h1>
+        <p class="hero-description">Legendary rides. Tiny scale. Massive attitude. Find your next favourite die-cast machine.</p>
+        <div class="hero-buttons"><a class="btn btn-primary" href="#shop">SHOP THE GARAGE <span>↗</span></a><a class="text-link" href="#collections">Explore collections <span>→</span></a></div>
+        <div class="hero-stats"><div><strong>150+</strong><span>RIDE STYLES</span></div><div><strong>1:64</strong><span>ICONIC SCALE</span></div><div><strong>100%</strong><span>COLLECTOR VIBE</span></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-badge">GARAGE<br><strong>01</strong></div>
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=85" alt="Sleek sports car in dramatic lighting" fetchpriority="high">
+        <div class="image-label"><span>FEATURED MACHINE</span><strong>BUILT FOR THE FAST LANE</strong></div>
+        <div class="speed-lines"></div>
+      </div>
+      <div class="hero-bottom-line"><span>01 / 04</span><div></div><span>START YOUR ENGINES</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Store highlights"><div>COLLECT <b>•</b> DISPLAY <b>•</b> RACE <b>•</b> REPEAT <b>•</b> COLLECT <b>•</b> DISPLAY <b>•</b> RACE <b>•</b> REPEAT <b>•</b></div></section>
+
+    <section class="shop-section section-wrap" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">YOUR NEXT OBSESSION</p><h2>THE <em>GARAGE</em></h2><p class="section-subtitle">Small cars. Big legends. Pick your ride.</p></div>
+        <div class="shop-tools"><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search your dream car..." aria-label="Search cars"></label><button class="filter-toggle" id="filterToggle">☷ Filters</button></div>
+      </div>
+      <div class="filter-row" id="filterRow">
+        <button class="filter-chip active" data-category="All">All Cars <span>↗</span></button>
+        <button class="filter-chip" data-category="Supercars">Supercars</button>
+        <button class="filter-chip" data-category="Racing">Racing & F1</button>
+        <button class="filter-chip" data-category="Classic">Classics</button>
+        <button class="filter-chip" data-category="Fantasy">Fantasy</button>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><span>🏁</span><h3>No cars in this lane</h3><p>Try another search or category.</p></div>
+    </section>
+
+    <section class="collections-section" id="collections">
+      <div class="section-wrap">
+        <div class="section-heading light-heading"><div><p class="eyebrow">FIND YOUR LANE</p><h2>CHOOSE YOUR <em>VIBE</em></h2></div><p class="section-subtitle">From track-ready icons to wild fantasy builds.</p></div>
+        <div class="collection-grid">
+          <a class="collection-card collection-red" href="#shop" data-jump-category="Racing"><span class="collection-number">01 / TRACK</span><div><h3>RACE<br>READY</h3><span>FOR THE NEED FOR SPEED ↗</span></div><b class="collection-mark">///</b></a>
+          <a class="collection-card collection-gold" href="#shop" data-jump-category="Supercars"><span class="collection-number">02 / EXOTIC</span><div><h3>SUPERCAR<br>ROYALTY</h3><span>THE DREAM MACHINES ↗</span></div><b class="collection-mark">V8</b></a>
+          <a class="collection-card collection-blue" href="#shop" data-jump-category="Classic"><span class="collection-number">03 / TIMELESS</span><div><h3>OLD-SCHOOL<br>COOL</h3><span>LEGENDS NEVER FADE ↗</span></div><b class="collection-mark">66</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo section-wrap" id="about"><div class="promo-icon">🔥</div><div><p class="eyebrow">WELCOME TO THE GARAGE</p><h2>NOT JUST CARS.<br><em>YOUR NEXT LEGEND.</em></h2><p>Whether you're starting your first collection or hunting for that one missing ride, your next favourite is waiting here.</p></div><a class="btn btn-primary" href="#shop">FIND YOUR RIDE ↗</a></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-flame">🔥</span><span>HOT WHEELS <b>GARAGE</b></span></a><p>Made for the love of the little legends. 🏁</p><span>© <span id="year"></span> Hot Wheels Garage · Fan-made concept store</span></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow">YOUR PIT STOP</p><h2>YOUR CART <span id="drawerCount">(0)</span></h2></div><button class="close-btn" id="closeCart" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span>🛒</span><h3>Your garage is empty</h3><p>Add a ride and park it here.</p><button class="btn btn-primary" id="continueShopping">BROWSE CARS</button></div>
+    <div class="cart-footer" id="cartFooter"><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div><p>Shipping and final details confirmed on WhatsApp.</p><button class="btn btn-primary checkout-btn" id="checkoutBtn">ORDER VIA WHATSAPP ↗</button></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
