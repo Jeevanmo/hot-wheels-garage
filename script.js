@@ -120,7 +120,7 @@ document.querySelectorAll("#mainNav a").forEach(a=>a.addEventListener("click",()
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeCart();});
 
 // Set this to your WhatsApp number, including country code, without + or spaces.
-const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+const WHATSAPP_NUMBER = "+918667722343";
 document.getElementById("checkoutBtn").addEventListener("click",()=>{
   if(!cart.length){showToast("Your cart is empty.");return;}
   if(WHATSAPP_NUMBER.includes("X")){showToast("Add your WhatsApp number in script.js first.");return;}
